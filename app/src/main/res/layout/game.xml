@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/math">
+
+    <TextView
+        android:id="@+id/time"
+        android:layout_width="90dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="29dp"
+        android:text="Time"
+        android:textSize="20dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="22dp"
+        android:layout_marginStart="22dp"
+        android:textColor="@color/white"/>
+
+    <TextView
+        android:id="@+id/score"
+        android:layout_width="90dp"
+        android:layout_height="35dp"
+        android:text="Score"
+        android:textSize="20dp"
+        android:layout_alignBaseline="@+id/time"
+        android:layout_alignBottom="@+id/time"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/white"/>
+
+    <TextView
+        android:id="@+id/skip"
+        android:layout_width="90dp"
+        android:layout_height="35dp"
+        android:text="Life"
+        android:textSize="20dp"
+        android:layout_alignBaseline="@+id/score"
+        android:layout_alignBottom="@+id/score"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:textColor="@color/white"/>
+
+    <TextView
+        android:id="@+id/math"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:text="Math"
+        android:textSize="40dp"
+        android:textAlignment="center"
+        android:layout_below="@+id/time"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"
+        android:textColor="@color/white"/>
+
+    <Button
+        android:id="@+id/ans1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ans1"
+        android:textSize="20dp"
+        android:onClick="ans_one"
+        android:layout_above="@+id/ans2"
+        android:layout_alignRight="@+id/score"
+        android:layout_alignEnd="@+id/score"
+        android:layout_marginBottom="16dp"
+        android:textColor="@color/white"
+        android:background="@color/colorPrimary"/>
+
+    <Button
+        android:id="@+id/ans2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ans2"
+        android:onClick="ans_two"
+        android:textSize="20dp"
+        android:layout_alignBaseline="@+id/ans3"
+        android:layout_alignBottom="@+id/ans3"
+        android:layout_toRightOf="@+id/ans1"
+        android:layout_toEndOf="@+id/ans1"
+        android:textColor="@color/white"
+        android:background="@color/colorPrimary"/>
+
+    <Button
+        android:id="@+id/ans3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ans3"
+        android:textSize="20dp"
+        android:onClick="ans_three"
+        android:layout_marginBottom="76dp"
+        android:layout_above="@+id/menu"
+        android:layout_toLeftOf="@+id/ans1"
+        android:layout_toStartOf="@+id/ans1"
+        android:textColor="@color/white"
+        android:background="@color/colorPrimary"/>
+
+    <Button
+        android:id="@+id/menu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:text="Menu"
+        android:onClick="back_to_menu"
+        android:textColor="@color/white"
+        android:background="@color/colorPrimary"/>
+
+    <Button
+        android:id="@+id/pause"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:text="pause"
+        android:onClick="pause"
+        android:textColor="@color/white"
+        android:background="@color/colorPrimary"/>
+
+</RelativeLayout>

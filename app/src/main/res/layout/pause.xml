@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/math">
+
+    <Button
+        android:id="@+id/pause_resume"
+        android:layout_width="120dp"
+        android:layout_height="40dp"
+        android:textSize="20dp"
+        android:layout_marginTop="138dp"
+        android:text="Resume"
+        android:onClick="resume"
+        android:background="@color/colorPrimary"
+        android:textColor="@color/white"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"/>
+
+    <Button
+        android:id="@+id/pause_menu"
+        android:layout_width="120dp"
+        android:layout_height="40dp"
+        android:text="Menu"
+        android:textSize="20dp"
+        android:onClick="back_to_menu"
+        android:layout_below="@+id/pause_resume"
+        android:layout_alignLeft="@+id/pause_resume"
+        android:layout_alignStart="@+id/pause_resume"
+        android:background="@color/colorPrimary"
+        android:textColor="@color/white"
+        android:layout_marginTop="10dp"/>
+
+    <Button
+        android:id="@+id/exit"
+        android:layout_width="120dp"
+        android:layout_height="40dp"
+        android:text="Exit"
+        android:textSize="20dp"
+        android:onClick="exit_game"
+        android:background="@color/colorPrimary"
+        android:textColor="@color/white"
+        android:layout_below="@+id/pause_menu"
+        android:layout_alignLeft="@+id/pause_menu"
+        android:layout_alignStart="@+id/pause_menu"
+        android:layout_marginTop="14dp"/>
+</RelativeLayout>

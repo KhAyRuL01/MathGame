@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/math">
+
+    <Button
+        android:id="@+id/btn1"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="130dp"
+        android:text="Easay"
+        android:textSize="20dp"
+        android:background="@color/colorPrimary"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:onClick="easay_mode"
+        android:textColor="@color/white"/>
+
+    <Button
+        android:id="@+id/btn2"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:text="Hard"
+        android:textSize="20dp"
+        android:onClick="hard_mode"
+        android:background="@color/colorPrimary"
+        android:layout_below="@+id/btn1"
+        android:layout_alignLeft="@+id/btn1"
+        android:layout_alignStart="@+id/btn1"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/white"/>
+
+    <Button
+        android:id="@+id/btn3"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:text="Exit"
+        android:textSize="20dp"
+        android:onClick="exit_game"
+        android:background="@color/colorPrimary"
+        android:layout_below="@+id/btn2"
+        android:layout_alignLeft="@+id/btn2"
+        android:layout_alignStart="@+id/btn2"
+        android:layout_marginTop="15dp"
+        android:textColor="@color/white"/>
+</RelativeLayout>
